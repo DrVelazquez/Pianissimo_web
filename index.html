@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pianissimo | Piano Learning Reimagined</title>
+    
+    <link rel="icon" type="image/jpg" href="channels4_profile.jpg">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#d4af37',
+                        'gold-light': '#f1c40f',
+                        'dark-bg': '#0a0a0a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: white; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f1c40f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="channels4_profile.jpg" alt="Pianissimo Logo" class="h-10 w-10 rounded-lg">
+                <span class="font-serif text-2xl tracking-tight text-gold uppercase tracking-widest">Pianissimo</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
+                <a href="#how-it-works" class="hover:text-gold transition-colors">How it Works</a>
+                <a href="#features" class="hover:text-gold transition-colors">Tech</a>
+                <a href="#social" class="hover:text-gold transition-colors">Community</a>
+            </div>
+            <a href="https://www.kickstarter.com/projects/drvelazquez/pianissimo-piano-learning-reimagined" target="_blank" class="bg-gold hover:bg-gold-light text-black px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-gold/20">
+                GET EARLY ACCESS
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="thumbnail.jpg" alt="Pianissimo background" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-bg/20 via-dark-bg/60 to-dark-bg"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center reveal active">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-bold tracking-widest uppercase mb-8">
+                <i data-lucide="award" class="w-4 h-4"></i> Successful Kickstarter Campaign
+            </div>
+            <h1 class="text-6xl md:text-8xl font-serif mb-6 tracking-tight leading-tight">
+                Visualize the Music. <br>
+                <span class="italic gold-gradient-text">Master the Keys.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                The premium LED-guided system that fits any piano. <br>
+                Learn intuitively with fully customizable visual feedback.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://www.kickstarter.com/projects/drvelazquez/pianissimo-piano-learning-reimagined" target="_blank" class="w-full sm:w-auto bg-gold text-black px-10 py-4 rounded-full text-lg font-bold flex items-center justify-center gap-2 hover:scale-105 transition-all">
+                    Back us on Kickstarter <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-24 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif mb-8 leading-tight">
+                        Piano Learning <br>
+                        <span class="text-gold italic">Reimagined.</span>
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">1</div>
+                            <div>
+                                <h4 class="text-xl font-medium mb-2">Universal Compatibility</h4>
+                                <p class="text-white/60 text-sm">Fits any digital or acoustic piano. Simply plug in via MIDI and start playing.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">2</div>
+                            <div>
+                                <h4 class="text-xl font-medium mb-2">Full Customization</h4>
+                                <p class="text-white/60 text-sm">Choose your colors, brightness, and speed for a truly personal learning experience.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">3</div>
+                            <div>
+                                <h4 class="text-xl font-medium mb-2">Visual Mastery</h4>
+                                <p class="text-white/60 text-sm">Build muscle memory 3x faster with precise LED guidance directly on the keys.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal relative group cursor-pointer rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-video">
+                    <a href="https://www.youtube.com/watch?v=qu5im7cTdZU" target="_blank" class="block w-full h-full relative">
+                        <img src="thumbnail.jpg" alt="Watch Pianissimo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                            <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="play" class="text-black w-8 h-8 fill-black ml-1"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute bottom-6 left-6 bg-black/80 backdrop-blur-md px-4 py-2 rounded-lg border border-white/10">
+                            <span class="text-xs font-bold tracking-widest uppercase">Watch Promo Video</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="glass-card p-8 reveal">
+                    <i data-lucide="settings" class="text-gold w-8 h-8 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-serif mb-3 italic">Custom Experience</h3>
+                    <p class="text-white/60 text-sm">Total control over visual feedback to match your style.</p>
+                </div>
+                <div class="glass-card p-8 reveal">
+                    <i data-lucide="maximize" class="text-gold w-8 h-8 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-serif mb-3 italic">Adjustable Design</h3>
+                    <p class="text-white/60 text-sm">Perfect fit for any instrument from 61 to 88 keys.</p>
+                </div>
+                <div class="glass-card p-8 reveal">
+                    <i data-lucide="zap" class="text-gold w-8 h-8 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-serif mb-3 italic">Zero Latency</h3>
+                    <p class="text-white/60 text-sm">High-speed processing for perfect synchronization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1 reveal">
+                    <img src="ejemplo.gif" alt="Pianissimo in Action" class="w-full rounded-2xl shadow-2xl border border-white/5">
+                </div>
+                <div class="flex-1 reveal">
+                    <h2 class="text-4xl font-serif mb-6 italic text-gold">The Future of Education.</h2>
+                    <p class="text-lg text-white/70 mb-8 font-light italic leading-relaxed">
+                        Pianissimo removes the technical barrier of sheet music, allowing you to focus on what matters: the pleasure of playing.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-white/80">
+                            <i data-lucide="check" class="w-5 h-5 text-gold"></i> Premium black-anodized finish
+                        </li>
+                        <li class="flex items-center gap-3 text-white/80">
+                            <i data-lucide="check" class="w-5 h-5 text-gold"></i> Lightweight & Portable
+                        </li>
+                    </ul>
+                    <img src="Logo.jpg" alt="Pianissimo Logo" class="h-16 rounded opacity-90 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="py-24 border-t border-white/5 bg-black/50">
+        <div class="max-w-7xl mx-auto px-6 text-center reveal">
+            <h2 class="text-4xl font-serif mb-12 italic">Join the Movement</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <a href="https://instagram.com/pianissimo.ok" target="_blank" class="glass-card p-8 group hover:bg-gold/10 transition-all">
+                    <i data-lucide="instagram" class="w-8 h-8 text-white mx-auto mb-4 group-hover:text-gold transition-colors"></i>
+                    <span class="block font-semibold tracking-widest text-xs">INSTAGRAM</span>
+                </a>
+                <a href="https://youtube.com/@pianissimok" target="_blank" class="glass-card p-8 group hover:bg-gold/10 transition-all">
+                    <i data-lucide="youtube" class="w-8 h-8 text-white mx-auto mb-4 group-hover:text-gold transition-colors"></i>
+                    <span class="block font-semibold tracking-widest text-xs">YOUTUBE</span>
+                </a>
+                <a href="mailto:okpianissimo@gmail.com" class="glass-card p-8 group hover:bg-gold/10 transition-all">
+                    <i data-lucide="mail" class="w-8 h-8 text-white mx-auto mb-4 group-hover:text-gold transition-colors"></i>
+                    <span class="block font-semibold tracking-widest text-xs">CONTACT</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-black text-center border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <img src="channels4_profile.jpg" alt="Logo" class="h-10 w-10 mx-auto rounded mb-4 opacity-50">
+            <p class="text-white/40 text-xs font-light tracking-widest">© 2026 PIANISSIMO PROJECT</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
